@@ -1,0 +1,11 @@
+services:
+
+    _defaults:
+        public: false
+
+    fabienChn\FileHandlerBundle\Component\FileHandler:
+        arguments: ["%file_handler%"]
+
+    fabienChn\FileHandlerBundle\Component\FileTestingHelper:
+        arguments: ["%file_handler%"]
+        public: true
